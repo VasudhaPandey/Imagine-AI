@@ -1,0 +1,84 @@
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 4%;
+  width:100%;
+  max-width: 100%;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+/*logo*/
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:23px;
+  font-weight:800;
+  color:#25213c;
+}
+
+
+
+.logo-icon{
+  color:#7955e8;
+  font-size:30px;
+}
+
+/*navigation*/
+
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:clamp(12px, 2vw ,25px);
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+.nav-links a{
+
+  text-decoration: none;
+  color:#302a3c;
+  font-size:14px;
+  font-weight:600;
+  transition:color 0.3s;
+}
+
+.nav-links a:hover{
+  color:#7955e8;
+}
+
+/*launch*/
+
+.launch-btn{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  padding: 7px 17px 7px 7px;
+  border:none;
+  border-radius: 30px;
+  background: linear-gradient(100deg, #ffffff ,#a8d5f9);
+  color:#292442;
+  font-weight:700;
+  cursor:pointer;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.launch-btn span{
+  display: grid;
+  place-items:center;
+  width: 32px;
+  border-radius: 50%;
+  background: white;
+  font-size: 17px;
+}
+.logo-link{
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+}
+
+

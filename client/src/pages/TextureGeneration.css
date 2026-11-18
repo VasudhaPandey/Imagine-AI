@@ -1,0 +1,441 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.texture-page {
+  display: flex;
+  min-height: 100vh;
+  background: #10101b;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* SIDEBAR */
+
+.texture-sidebar {
+  width: 245px;
+  min-width: 245px;
+  min-height: 100vh;
+  background: #151522;
+  padding: 28px 18px;
+  border-right: 1px solid #29283b;
+}
+
+.texture-logo {
+  font-size: 25px;
+  margin: 0 0 42px 8px;
+}
+
+.texture-logo span {
+  color: #9566f4;
+}
+
+.texture-menu-title {
+  color: #77758e;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin: 25px 0 12px 10px;
+}
+
+.texture-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.texture-nav a {
+  text-decoration: none;
+  color: #aaa9bd;
+  padding: 12px;
+  border-radius: 9px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.texture-nav a:hover,
+.texture-nav a.active {
+  background: #29213e;
+  color: #b99aff;
+}
+
+/* MAIN CONTENT */
+
+.texture-main {
+  flex: 1;
+  min-width: 0;
+  padding: 35px 42px;
+}
+
+.texture-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.texture-header h1 {
+  font-size: 27px;
+  margin: 0 0 8px;
+}
+
+.texture-header p {
+  color: #9290a8;
+  font-size: 13px;
+  margin: 0;
+}
+
+.texture-header-badge {
+  background: #241d38;
+  color: #bd9cff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* HERO */
+
+.texture-hero {
+  background: linear-gradient(110deg, #292044, #191a30);
+  border: 1px solid #40315e;
+  border-radius: 17px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.texture-tag {
+  color: #b89aff;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.texture-hero h2 {
+  font-size: 27px;
+  margin: 12px 0;
+}
+
+.texture-hero p {
+  color: #b4b0c8;
+  font-size: 13px;
+  margin: 0;
+}
+
+.texture-hero-icon {
+  font-size: 65px;
+  color: #a77aff;
+  padding-right: 30px;
+}
+
+/* WORKSPACE */
+
+.texture-workspace {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.texture-form,
+.texture-preview,
+.texture-history {
+  background: #171725;
+  border: 1px solid #2c2b40;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.texture-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.texture-section-heading h2,
+.texture-section-heading h3 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.texture-section-heading span {
+  color: #8c7aa9;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.texture-form label {
+  display: block;
+  color: #c8c5d7;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.texture-form textarea {
+  width: 100%;
+  min-height: 115px;
+  resize: vertical;
+  padding: 15px;
+  background: #10101b;
+  color: white;
+  border: 1px solid #38364e;
+  border-radius: 9px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.texture-form textarea:focus,
+.texture-form select:focus {
+  border-color: #9566f4;
+}
+
+.texture-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 27px;
+}
+
+.texture-categories button {
+  background: #222132;
+  color: #aaa7bd;
+  border: 1px solid #38364b;
+  padding: 9px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.texture-categories button.selected {
+  background: #35264f;
+  color: #c5aaff;
+  border-color: #9566f4;
+}
+
+.texture-settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.texture-form select {
+  width: 100%;
+  padding: 12px;
+  background: #10101b;
+  color: white;
+  border: 1px solid #38364e;
+  border-radius: 8px;
+  outline: none;
+  font-size: 12px;
+}
+
+.texture-seamless {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #202031;
+  padding: 15px;
+  border-radius: 9px;
+  margin-bottom: 22px;
+}
+
+.texture-seamless strong {
+  font-size: 12px;
+}
+
+.texture-seamless p {
+  font-size: 10px;
+  color: #9290a8;
+  margin: 6px 0 0;
+}
+
+.texture-seamless input {
+  accent-color: #9566f4;
+  width: 17px;
+  height: 17px;
+}
+
+.texture-generate-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(100deg, #9566f4, #7042d5);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.texture-generate-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+/* PREVIEW */
+
+.texture-preview-box {
+  min-height: 365px;
+  background: #10101b;
+  border: 1px dashed #49435f;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.texture-preview-placeholder span {
+  font-size: 48px;
+  color: #9566f4;
+}
+
+.texture-preview-placeholder h3 {
+  font-size: 14px;
+  margin: 15px 0 9px;
+}
+
+.texture-preview-placeholder p {
+  color: #89869e;
+  font-size: 11px;
+  line-height: 1.7;
+  max-width: 250px;
+}
+
+.texture-preview-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.texture-preview-info div {
+  background: #202031;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 0;
+}
+
+.texture-preview-info span,
+.texture-preview-info strong {
+  display: block;
+}
+
+.texture-preview-info span {
+  color: #89869e;
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+
+.texture-preview-info strong {
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+/* RECENT TEXTURES */
+
+.texture-history {
+  margin-top: 25px;
+}
+
+.texture-empty {
+  color: #858298;
+  font-size: 12px;
+  padding: 18px 0;
+}
+
+.texture-history-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.texture-history-card {
+  display: flex;
+  gap: 13px;
+  padding: 14px;
+  background: #202031;
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.texture-history-icon {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  background: #35264f;
+  color: #c5aaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.texture-history-card strong {
+  font-size: 12px;
+}
+
+.texture-history-card p {
+  font-size: 11px;
+  color: #aaa7bd;
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+
+.texture-history-card span {
+  font-size: 10px;
+  color: #8f7bb4;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .texture-main {
+    padding: 25px;
+  }
+
+  .texture-workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .texture-page {
+    flex-direction: column;
+  }
+
+  .texture-sidebar {
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+  }
+
+  .texture-main {
+    padding: 20px 14px;
+  }
+
+  .texture-hero {
+    padding: 22px;
+  }
+
+  .texture-hero-icon {
+    display: none;
+  }
+
+  .texture-settings-grid,
+  .texture-history-list {
+    grid-template-columns: 1fr;
+  }
+
+  .texture-header h1 {
+    font-size: 21px;
+  }
+}

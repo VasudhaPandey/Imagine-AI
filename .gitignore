@@ -1,0 +1,25 @@
+
+# Node.js
+node_modules/
+client/node_modules/
+
+# React build
+client/build/
+client/dist/
+
+# Java / Spring Boot
+server/target/
+*.class
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db

@@ -1,0 +1,241 @@
+.signup-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #dce8f5, #eadcf2);
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(40, 20, 70, 0.15);
+}
+
+/* Left illustration panel */
+
+.signup-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  background:
+    radial-gradient(ellipse at 20% 30%, #e58bbd 0%, transparent 35%),
+    radial-gradient(ellipse at 80% 65%, #a46ad4 0%, transparent 40%),
+    linear-gradient(145deg, #170b3d, #442078, #bd7cc5);
+}
+
+.signup-art::before,
+.signup-art::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 170px;
+  border-radius: 50%;
+  background: rgba(218, 157, 224, 0.16);
+  transform: rotate(-20deg);
+}
+
+.signup-art::before {
+  top: 25%;
+  left: -100px;
+}
+
+.signup-art::after {
+  bottom: 15%;
+  right: -130px;
+}
+
+.art-content {
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+}
+
+.signup-logo {
+  display: block;
+  font-size: 85px;
+  margin-bottom: 15px;
+}
+
+.art-content h1 {
+  font-size: 36px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.art-content p {
+  color: #ead9f5;
+  font-size: 16px;
+}
+
+/* Right form panel */
+
+.signup-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 55px;
+  background: #fff;
+}
+
+.signup-form-section form {
+  width: 100%;
+  max-width: 430px;
+}
+
+.signup-form-section h2 {
+  color: #17213b;
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.signup-subtitle {
+  color: #778196;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-buttons button {
+  flex: 1;
+  padding: 12px 6px;
+  background: white;
+  border: 1px solid #dfe2e9;
+  border-radius: 7px;
+  color: #344054;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.signup-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0;
+  color: #9299a8;
+  font-size: 12px;
+}
+
+.signup-divider::before,
+.signup-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.signup-form-section > form > label:not(.terms-label) {
+  display: block;
+  margin: 17px 0 8px;
+  color: #26334a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.signup-form-section input:not([type="checkbox"]) {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #dce1ea;
+  border-radius: 7px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 13px;
+}
+
+.signup-form-section input:focus {
+  border-color: #8b36b5;
+}
+
+.signup-password-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dce1ea;
+  border-radius: 7px;
+  padding-right: 10px;
+}
+
+.signup-password-field input {
+  border: none;
+}
+
+.signup-password-field button {
+  border: none;
+  background: transparent;
+  color: #8435a6;
+  cursor: pointer;
+}
+
+.terms-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  color: #606b7d;
+  font-size: 12px;
+}
+
+.terms-label input {
+  accent-color: #8734b2;
+}
+
+.terms-label a,
+.already-account a {
+  color: #8435a6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.create-account-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(100deg, #6428bd, #a32fa9);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.already-account {
+  text-align: center;
+  color: #778196;
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+@media (max-width: 750px) {
+  .signup-page {
+    padding: 15px;
+  }
+
+  .signup-card {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-art {
+    min-height: 220px;
+  }
+
+  .signup-form-section {
+    padding: 30px 22px;
+  }
+}
+
